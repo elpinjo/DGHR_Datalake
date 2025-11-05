@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <FLOW VERSION="3.2" CLEANUP="true">
+  <COMMENT></COMMENT>
 
   <!-- nodes -->
 
@@ -1830,5 +1831,9 @@
 </MAPCOPY>
 </MAP>
 </INVOKE>
+
+<EXIT FROM="$flow" SIGNAL="FAILURE" FAILURE-MESSAGE="Error %header/status%: %header/statusMessage%">
+  <COMMENT></COMMENT>
+</EXIT>
 </SEQUENCE>
 </FLOW>

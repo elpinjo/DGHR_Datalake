@@ -1331,7 +1331,7 @@
 </MAP>
 </INVOKE>
 
-<SEQUENCE TIMEOUT="" EXIT-ON="FAILURE" CONDITION="%header/status% != 200" FORM="IF">
+<SEQUENCE TIMEOUT="" EXIT-ON="FAILURE" CONDITION="%header/status% != 201" FORM="IF">
   <COMMENT></COMMENT>
 
   <!-- nodes -->
